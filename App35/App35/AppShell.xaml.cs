@@ -11,8 +11,8 @@ namespace App35
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute("page2", typeof(Page2));
-            Routing.RegisterRoute("page3", typeof(Page3));
+            Routing.RegisterRoute(nameof(Page2), typeof(Page2));
+            Routing.RegisterRoute(nameof(Page3), typeof(Page3));
         }
     }
 }

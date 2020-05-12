@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace App35.Views
 {
 
-    [QueryProperty(nameof(Data), "data")]
+    [QueryProperty(nameof(Data), nameof(Data))]
     public partial class Page3 : ContentPage
     {
         public Page3()
@@ -32,7 +32,7 @@ namespace App35.Views
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("..?backdata=from page 3");
+            await Shell.Current.GoToAsync("..?Data=from page 3");
         }
     }
 }

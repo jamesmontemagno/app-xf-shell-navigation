@@ -9,7 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace App35.Views
 {
-    [QueryProperty(nameof(Count), "count")]
+    [QueryProperty(nameof(Count), nameof(Count))]
     public partial class Page2 : ContentPage
     {
         string count = "";
@@ -31,12 +31,12 @@ namespace App35.Views
 
         private async void ButtonBack_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("..?backdata=from page2");
+            await Shell.Current.GoToAsync("..?Data=from page2");
         }
 
         private async void ButtonBackAndPage3_Clicked(object sender, EventArgs e)
         {
-            await Shell.Current.GoToAsync("../page3?data=from page2 and last page is now page1");
+            await Shell.Current.GoToAsync($"../{nameof(Page3)}?Data=from page2 and last page is now page1");
         }
     }
 }

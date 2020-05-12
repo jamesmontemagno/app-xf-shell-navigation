@@ -13,7 +13,7 @@
             <Label x:Name="LabelCount" HorizontalOptions="Center" FontSize="Large" Text="{Binding Count, StringFormat='You clicked {0}'}"/>
             <Button Text="Click Me" x:Name="ButtonClick" Clicked="ButtonClick_Clicked"/>
             <Button Text="Navigate" x:Name="ButtonNavigate" Clicked="ButtonNavigate_Clicked"/>
-            <Label Text="{Binding BackData}" FontSize="Large"/>
+            <Label Text="{Binding Data}" FontSize="Large"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
