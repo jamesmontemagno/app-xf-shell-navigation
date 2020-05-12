@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:pages="clr-namespace:App35.Views"
+             mc:Ignorable="d"
+             x:Class="App35.Views.Page2">
+    <d:ContentPage.BindingContext>
+        <pages:Page2/>
+    </d:ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="{Binding Count, StringFormat='You passed in {0}'}"
+                   FontSize="Large" />
+
+            <Button x:Name="ButtonBack" Text="Back" Clicked="ButtonBack_Clicked"/>
+            <Button x:Name="ButtonBackAndPage3" Text="Back and go to Page 3" Clicked="ButtonBackAndPage3_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
